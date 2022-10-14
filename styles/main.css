@@ -1,0 +1,186 @@
+@font-face {
+  font-family: lato;
+  src: url("../res/Lato-Regular.ttf");
+}
+
+@font-face {
+  font-family: lato-bold;
+  src: url("../res/Lato-Bold.ttf");
+}
+
+@font-face {
+  font-family: lato-xbold;
+  src: url("../res/Lato-Black.ttf");
+}
+
+@font-face {
+  font-family: kefa;
+  src: url("../res/Kefa.ttc");
+}
+
+:root {
+  --main-green: #7cc69e;
+  --nav-color: #f7cb5c;
+  --footer-color: #54426b;
+  --main-blue: #3083dc;
+  --background: url("../res/Sprinkle.svg");
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-size: 16pt;
+  background: var(--background);
+  width: 100vw;
+  /* height: 100vh; */
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
+h1 {
+  font-family: lato-xbold;
+  font-size: 3.3rem;
+}
+
+h2 {
+  font-family: kefa;
+}
+
+.logo {
+  height: 3.5rem;
+  margin-left: 1rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav div {
+  width: 65vw;
+  background-color: var(--nav-color);
+  justify-self: end;
+  height: 3.5rem;
+  border-radius: 0 0 0 10px;
+}
+nav div ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  /* width: 60vw; */
+  justify-content: space-around;
+  font-family: lato;
+  margin: 0.75rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  transition: ease-out color 0.5s;
+}
+
+nav a:hover {
+  color: rgb(255, 255, 255);
+  transition: ease-in-out color 0.25s;
+}
+
+.green-box {
+  background-color: var(--main-green);
+  width: 33rem;
+  padding: 0.5rem 1.5rem 1rem 1.5rem;
+
+  /* left: 4em;
+  top: 2em; */
+  margin: 3rem 0 0 4rem;
+}
+
+.red-arrow {
+  position: absolute;
+  margin: 0 0 0 33rem;
+  top: 5.5rem;
+  max-width: 20rem;
+}
+
+.contact-button {
+  background-color: var(--main-blue);
+  border: none;
+  padding: 1.5rem 2.5rem;
+  border-radius: 15px;
+  color: white;
+  font-family: lato-bold;
+  font-size: 1.5rem;
+  margin: 1.5rem 0 0 4rem;
+  transition: ease background-color 0.5s;
+}
+
+.contact-button:hover {
+  background-color: #386da6;
+  transition: ease background-color 0.5s;
+}
+
+footer {
+  height: 5rem;
+  background-color: var(--footer-color);
+  color: white;
+  font-family: lato;
+  text-align: center;
+  font-size: 1rem;
+  /* margin: auto 0; */
+}
+
+/* Styles for wdd, se, and other */
+
+h2.grid-page {
+  text-align: center;
+}
+
+#card-grid {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  max-width: 60vw;
+  padding: 1rem 5rem;
+}
+
+.card {
+  width: 17rem;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-text {
+  margin-left: 1rem;
+  font-family: lato;
+}
+
+.card-button {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--main-blue);
+  border-radius: 15px 7px 15px 7px;
+  width: 6rem;
+  color: white;
+  font-family: lato;
+  text-decoration: none;
+  transition: ease background-color 0.5s;
+}
+
+.card-button:hover {
+  background-color: #386da6;
+  transition: ease background-color 0.5s;
+}
