@@ -18,12 +18,21 @@
   src: url("../res/Kefa.ttc");
 }
 
+@font-face {
+  font-family: recursive;
+  src: url("../res/Recursive_Monospace-Regular.ttf");
+}
+
 :root {
   --main-green: #7cc69e;
   --nav-color: #f7cb5c;
+  --nav-text: black;
+  --nav-hover: white;
   --footer-color: #54426b;
   --main-blue: #3083dc;
   --background: url("../res/Sprinkle.svg");
+  --font-header: lato-bold;
+  --font: lato;
 }
 
 body {
@@ -42,6 +51,7 @@ body {
 
 main {
   flex-grow: 1;
+  color: var(--nav-text);
 }
 
 h1 {
@@ -50,7 +60,7 @@ h1 {
 }
 
 h2 {
-  font-family: kefa;
+  font-family: var(--font-header);
 }
 
 .logo {
@@ -78,17 +88,18 @@ nav div ul {
   /* width: 60vw; */
   justify-content: space-around;
   font-family: lato;
+  font-size: 1.25rem;
   margin: 0.75rem;
 }
 
 nav a {
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: var(--nav-text);
   transition: ease-out color 0.5s;
 }
 
 nav a:hover {
-  color: rgb(255, 255, 255);
+  color: var(--nav-hover);
   transition: ease-in-out color 0.25s;
 }
 
@@ -115,7 +126,7 @@ nav a:hover {
   padding: 1.5rem 2.5rem;
   border-radius: 15px;
   color: white;
-  font-family: lato-bold;
+  font-family: var(--font-header);
   font-size: 1.5rem;
   margin: 1.5rem 0 0 4rem;
   transition: ease background-color 0.5s;
@@ -130,7 +141,7 @@ footer {
   height: 5rem;
   background-color: var(--footer-color);
   color: white;
-  font-family: lato;
+  font-family: var(--font);
   text-align: center;
   font-size: 1rem;
   /* margin: auto 0; */
@@ -144,13 +155,15 @@ h2.grid-page {
 
 #card-grid {
   display: grid;
-  grid-template-columns: 33% 33% 33%;
-  max-width: 60vw;
-  padding: 1rem 5rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 1rem 7rem;
+  margin: 0 auto;
+  gap: 5rem 7rem;
+  place-content: center;
 }
 
 .card {
-  width: 17rem;
+  /* width: 20rem; */
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -164,7 +177,7 @@ h2.grid-page {
 
 .card-text {
   margin-left: 1rem;
-  font-family: lato;
+  font-family: var(--font);
 }
 
 .card-button {
@@ -175,7 +188,7 @@ h2.grid-page {
   border-radius: 15px 7px 15px 7px;
   width: 6rem;
   color: white;
-  font-family: lato;
+  font-family: var(--font);
   text-decoration: none;
   transition: ease background-color 0.5s;
 }
