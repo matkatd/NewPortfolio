@@ -18,8 +18,8 @@ function buildPage(content) {
       <div class="card-text">
         <h3>${element.title}</h3>
         <p>${element.date}</p>
-      </div>
-    <a href="./project?=${element.slug}" class="card-button">See More</a>
+      </div>  
+    <a href="./project.html?proj=${element.slug}" class="card-button">See More</a>
   </div>`;
   });
 

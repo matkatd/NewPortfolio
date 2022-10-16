@@ -63,8 +63,13 @@ h2 {
   font-family: var(--font-header);
 }
 
+img {
+  display: block;
+  width: 100%;
+}
 .logo {
   height: 3.5rem;
+  width: auto;
   margin-left: 1rem;
 }
 
@@ -196,4 +201,16 @@ h2.grid-page {
 .card-button:hover {
   background-color: #386da6;
   transition: ease background-color 0.5s;
+}
+
+/* styles for project pages */
+
+.project-page {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 15% 75% 20%;
+}
+
+.project-body {
+  max-width: 70ch;
 }

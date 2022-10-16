@@ -22,4 +22,11 @@ export default class DataService {
     const card = content.find((e) => e.title === title);
     return card;
   }
+
+  /** Returns data attached to object with given slug */
+  async getBySlug(url, slug) {
+    const content = await this.getContent(baseUrl + url);
+    const find = content.find((item) => item.slug === slug);
+    return find;
+  }
 }
