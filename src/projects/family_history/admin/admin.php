@@ -184,9 +184,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <!-- <a href="./CRUDE/index.php">So the login isn't set up yet...</a> -->
     </main>
 </body>
-<?php
-require_once "../includes/elements/footer.php";
-?>
+<footer>
+    <p>copyright 2022</p>
+    <script src="../js/main.js"></script>
+</footer>
 
 
 </html>
