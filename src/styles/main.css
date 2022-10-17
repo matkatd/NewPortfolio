@@ -63,6 +63,10 @@ h2 {
   font-family: var(--font-header);
 }
 
+h3 {
+  font-family: var(--font-header);
+}
+
 img {
   display: block;
   width: 100%;
@@ -192,6 +196,7 @@ h2.grid-page {
 .card-text {
   margin-left: 1rem;
   font-family: var(--font);
+  color: black;
 }
 
 .card-button {
