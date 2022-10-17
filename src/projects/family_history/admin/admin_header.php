@@ -1,12 +1,12 @@
 <?php
 // Declare all links
-$home = "../index.php";
-$stories = "../stories.php";
-$people = "../people.php";
-$admin = "../admin/admin.php";
-$about = "../about.php";
-$logo = "../images/tree-of-life-drawing-celtic-style-gold.png";
-$css = "../styles/other.css";
+$home = "../../index.php";
+$stories = "../../stories.php";
+$people = "../../people.php";
+$admin = "../../admin/admin.php";
+$about = "../../about.php";
+$logo = "../../images/tree-of-life-drawing-celtic-style-gold.png";
+$css = "../../styles/other.css";
 $admin_link = "Login";
 
 session_start();
