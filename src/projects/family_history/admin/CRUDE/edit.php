@@ -6,15 +6,15 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     exit;
 }
 //echo $_SERVER['DOCUMENT_ROOT'];
-$home = "/family_history/index.php";
-$stories = "/family_history/stories.php";
-$people = "/family_history/people.php";
-$admin = "/family_history/admin/admin.php";
-$about = "/family_history/about.php";
-$logo = "/family_history/images/tree-of-life-drawing-celtic-style-gold.png";
-$css = "/family_history/styles/other.css";
+$home = "/project/family_history/index.php";
+$stories = "/project/family_history/stories.php";
+$people = "/project/family_history/people.php";
+$admin = "/project/family_history/admin/admin.php";
+$about = "/project/family_history/about.php";
+$logo = "/project/family_history/images/tree-of-life-drawing-celtic-style-gold.png";
+$css = "/project/family_history/styles/other.css";
 spl_autoload_register(function ($class) {
-    require_once $_SERVER['DOCUMENT_ROOT'] . "/family_history/includes/classes/{$class}.php";
+    require_once $_SERVER['DOCUMENT_ROOT'] . "/project/family_history/includes/classes/{$class}.php";
 });
 # Get names of people from db
 $allPeople = PeopleRecordCollection::getAll();
@@ -90,7 +90,7 @@ if (!empty($_POST)) {
 
         <nav>
             <a class="logo" href=<?= $home ?>>
-                <img src="/family_history/images/tree-of-life-drawing-celtic-style-gold.png"></a>
+                <img src="/project/family_history/images/tree-of-life-drawing-celtic-style-gold.png"></a>
             <div class="nav-text">
                 <a href=<?= $home ?>>
                     <h1>Price Family History</h1>
