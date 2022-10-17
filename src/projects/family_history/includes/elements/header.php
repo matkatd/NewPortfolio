@@ -1,14 +1,14 @@
 <?php
 //echo $_SERVER['DOCUMENT_ROOT'];
-$home = "/family_history/index.php";
-$stories = "/family_history/stories.php";
-$people = "/family_history/people.php";
-$admin = "/family_history/admin/admin.php";
-$about = "/family_history/about.php";
-$logo = "/family_history/images/tree-of-life-drawing-celtic-style-gold.png";
-$css = "/family_history/styles/other.css";
+$home = "/projects/family_history/index.php";
+$stories = "/projects/family_history/stories.php";
+$people = "/projects/family_history/people.php";
+$admin = "/projects/family_history/admin/admin.php";
+$about = "/projects/family_history/about.php";
+$logo = "/projects/family_history/images/tree-of-life-drawing-celtic-style-gold.png";
+$css = "/projects/family_history/styles/other.css";
 spl_autoload_register(function ($class) {
-    require_once $_SERVER['DOCUMENT_ROOT'] . "/family_history/includes/classes/{$class}.php";
+    require_once $_SERVER['DOCUMENT_ROOT'] . "/projects/family_history/includes/classes/{$class}.php";
 });
 ?>
 
@@ -29,7 +29,7 @@ spl_autoload_register(function ($class) {
 
         <nav>
             <a class="logo header-text" href=<?= $home ?>>
-                <img src="/family_history/images/tree-of-life-drawing-celtic-style-gold.png"></a>
+                <img src="/projects/family_history/images/tree-of-life-drawing-celtic-style-gold.png"></a>
             <div class="nav-text">
                 <a href=<?= $home ?>>
                     <h1 class="header-text">Price Family History</h1>
