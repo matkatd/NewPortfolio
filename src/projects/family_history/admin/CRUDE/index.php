@@ -15,9 +15,10 @@ require_once "../admin_header.php";
     </div>
 </main>
 </body>
-<?php
-require_once "../../includes/elements/footer.php";
-?>
+<footer>
+    <p>copyright 2022</p>
+    <script src="../../js/main.js"></script>
+</footer>
 
 
 </html>
