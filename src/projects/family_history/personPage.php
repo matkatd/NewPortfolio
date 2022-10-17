@@ -5,7 +5,7 @@ $people = "/project/family_history/people.php";
 $admin = "/project/family_history/admin/admin.php";
 $about = "/project/family_history/about.php";
 $logo = "/project/family_history/images/tree-of-life-drawing-celtic-style-gold.png";
-$css = "./styles/other.css";
+$css = "/project/family_history/styles/other.css";
 spl_autoload_register(function ($class) {
     require_once $_SERVER['DOCUMENT_ROOT'] . "/project/family_history/includes/classes/{$class}.php";
 });
