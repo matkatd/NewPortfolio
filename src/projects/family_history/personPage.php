@@ -1,11 +1,11 @@
 <?php
-$home = "/project/family_history/index.php";
-$stories = "/project/family_history/stories.php";
-$people = "/project/family_history/people.php";
-$admin = "/project/family_history/admin/admin.php";
-$about = "/project/family_history/about.php";
-$logo = "/project/family_history/images/tree-of-life-drawing-celtic-style-gold.png";
-$css = "/project/family_history/styles/other.css";
+$home = "./index.php";
+$stories = "./stories.php";
+$people = "./people.php";
+$admin = "./admin/admin.php";
+$about = "./about.php";
+$logo = "./images/tree-of-life-drawing-celtic-style-gold.png";
+$css = "./styles/other.css";
 spl_autoload_register(function ($class) {
     require_once $_SERVER['DOCUMENT_ROOT'] . "/project/family_history/includes/classes/{$class}.php";
 });
@@ -73,8 +73,7 @@ $page_title = $person_record->getFullName();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Price Family History | Stories</title>
     <link rel="stylesheet" href=<?= $css ?>>
-    <link rel="icon" type="image/x-icon"
-        href="/project/family_history/images/tree-of-life-drawing-celtic-style-gold.png">
+    <link rel="icon" type="image/x-icon" href="./images/tree-of-life-drawing-celtic-style-gold.png">
 </head>
 
 <body>
@@ -82,7 +81,7 @@ $page_title = $person_record->getFullName();
 
         <nav id="desktop-nav">
             <a class="logo header-text" href=<?= $home ?>>
-                <img src="/project/family_history/images/tree-of-life-drawing-celtic-style-gold.png"></a>
+                <img src="./images/tree-of-life-drawing-celtic-style-gold.png"></a>
             <div class="nav-text">
                 <a href=<?= $home ?>>
                     <h1 class="header-text">Price Family History</h1>
@@ -97,7 +96,7 @@ $page_title = $person_record->getFullName();
         </nav>
         <nav id="mobile-nav">
             <a class="logo header-text" href=<?= $home ?>>
-                <img src="/project/family_history/images/tree-of-life-drawing-celtic-style-gold.png"></a>
+                <img src="./images/tree-of-life-drawing-celtic-style-gold.png"></a>
             <div class="nav-text">
                 <a href=<?= $home ?>>
                     <h1 class="header-text">Price Family History</h1>

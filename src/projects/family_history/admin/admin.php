@@ -12,13 +12,13 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
 
 
 // Declare variables for links
-$home = "/project/family_history/index.php";
-$stories = "/project/family_history/stories.php";
-$people = "/project/family_history/people.php";
-$admin = "/project/family_history/admin/admin.php";
-$about = "/project/family_history/about.php";
-$logo = "/project/family_history/images/tree-of-life-drawing-celtic-style-gold.png";
-$css = "/project/family_history/styles/other.css";
+$home = "../index.php";
+$stories = "../stories.php";
+$people = "../people.php";
+$admin = "../admin/admin.php";
+$about = "../about.php";
+$logo = "../images/tree-of-life-drawing-celtic-style-gold.png";
+$css = "../styles/other.css";
 $admin_link = "Login";
 
 
@@ -123,7 +123,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         <nav id="desktop-nav">
             <a class="logo header-text" href=<?= $home ?>>
-                <img src="/project/family_history/images/tree-of-life-drawing-celtic-style-gold.png"></a>
+                <img src="../images/tree-of-life-drawing-celtic-style-gold.png"></a>
             <div class="nav-text">
                 <a href=<?= $home ?>>
                     <h1 class="header-text">Price Family History</h1>
@@ -138,7 +138,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </nav>
         <nav id="mobile-nav">
             <a class="logo header-text" href=<?= $home ?>>
-                <img src="/project/family_history/images/tree-of-life-drawing-celtic-style-gold.png"></a>
+                <img src="../images/tree-of-life-drawing-celtic-style-gold.png"></a>
             <div class="nav-text">
                 <a href=<?= $home ?>>
                     <h1 class="header-text">Price Family History</h1>
@@ -169,12 +169,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <form class="login-box" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">
             <div class="username">
                 <label for="username">Enter your username:</label><br>
-                <input id="username" name="username" placeholder="Username" type="text" class="login-input" autocomplete="off">
+                <input id="username" name="username" placeholder="Username" type="text" class="login-input"
+                    autocomplete="off">
                 <span class="err-msg"><?= $username_err; ?></span>
             </div>
             <div class="pass">
                 <label for="passw">Enter your password:</label><br>
-                <input type="password" id="passw" name="password" placeholder="Password" type="text" class="login-input" autocomplete="off">
+                <input type="password" id="passw" name="password" placeholder="Password" type="text" class="login-input"
+                    autocomplete="off">
                 <span class="err-msg"><?= $password_err; ?></span>
             </div>
             <input class="submit-button" type="submit" value="Login">

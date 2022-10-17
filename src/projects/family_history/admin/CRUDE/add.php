@@ -3,13 +3,13 @@ session_start();
 
 $page = "CRUDE";
 //echo $_SERVER['DOCUMENT_ROOT'];
-$home = "/project/family_history/index.php";
-$stories = "/project/family_history/stories.php";
-$people = "/project/family_history/people.php";
-$admin = "/project/family_history/admin/admin.php";
-$about = "/project/family_history/about.php";
-$logo = "/project/family_history/images/tree-of-life-drawing-celtic-style-gold.png";
-$css = "/project/family_history/styles/other.css";
+$home = "../../index.php";
+$stories = "../../stories.php";
+$people = "../../people.php";
+$admin = "../../admin/admin.php";
+$about = "../../about.php";
+$logo = "../../images/tree-of-life-drawing-celtic-style-gold.png";
+$css = "../../styles/other.css";
 $admin_link = "Login";
 // Check if user is logged in, if not, redirect to login page
 if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
@@ -17,10 +17,10 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     exit;
 } else if ($page !== "CRUDE") {
     $admin_link = "Logout";
-    $admin = "/project/family_history/admin/logout.php";
+    $admin = "../logout.php";
 } else {
     $admin_link = "Admin";
-    $admin = "/project/family_history/admin/CRUDE/index.php";
+    $admin = "./index.php";
 }
 
 spl_autoload_register(function ($class) {
@@ -78,7 +78,7 @@ if (!empty($_POST)) {
 
         <nav id="desktop-nav">
             <a class="logo" href=<?= $home ?>>
-                <img src="/project/family_history/images/tree-of-life-drawing-celtic-style-gold.png"></a>
+                <img src="../../images/tree-of-life-drawing-celtic-style-gold.png"></a>
             <div class="nav-text">
                 <a href=<?= $home ?>>
                     <h1>Price Family History</h1>
@@ -93,7 +93,7 @@ if (!empty($_POST)) {
         </nav>
         <nav id="mobile-nav">
             <a class="logo header-text" href=<?= $home ?>>
-                <img src="/project/family_history/images/tree-of-life-drawing-celtic-style-gold.png"></a>
+                <img src="../../images/tree-of-life-drawing-celtic-style-gold.png"></a>
             <div class="nav-text">
                 <a href=<?= $home ?>>
                     <h1 class="header-text">Price Family History</h1>
@@ -142,7 +142,7 @@ if (!empty($_POST)) {
 </body>
 <footer>
     <p>copyright 2022</p>
-    <script src="/project/family_history/js/main.js"></script>
+    <script src="../../js/main.js"></script>
     <script>
     const toolbarOptions = [
         ['bold', 'italic', 'underline'], // toggled buttons

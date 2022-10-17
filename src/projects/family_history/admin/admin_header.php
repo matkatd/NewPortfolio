@@ -1,12 +1,12 @@
 <?php
 // Declare all links
-$home = "/project/family_history/index.php";
-$stories = "/project/family_history/stories.php";
-$people = "/project/family_history/people.php";
-$admin = "/project/family_history/admin/admin.php";
-$about = "/project/family_history/about.php";
-$logo = "/project/family_history/images/tree-of-life-drawing-celtic-style-gold.png";
-$css = "/project/family_history/styles/other.css";
+$home = "../index.php";
+$stories = "../stories.php";
+$people = "../people.php";
+$admin = "../admin/admin.php";
+$about = "../about.php";
+$logo = "../images/tree-of-life-drawing-celtic-style-gold.png";
+$css = "../styles/other.css";
 $admin_link = "Login";
 
 session_start();
@@ -16,10 +16,10 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     exit;
 } else if ($page === "CRUDE") { //Based on the page, change what the link that originally says "login"
     $admin_link = "Admin";
-    $admin = "/project/family_history/admin/CRUDE/index.php";
+    $admin = "./CRUDE/index.php";
 } else {
     $admin_link = "Logout";
-    $admin = "/project/family_history/admin/logout.php";
+    $admin = "./logout.php";
 }
 spl_autoload_register(function ($class) {
     require_once $_SERVER['DOCUMENT_ROOT'] . "/project/family_history/includes/classes/{$class}.php";
@@ -44,7 +44,7 @@ spl_autoload_register(function ($class) {
 
         <nav id="desktop-nav">
             <a class="logo header-text" href=<?= $home ?>>
-                <img src="/project/family_history/images/tree-of-life-drawing-celtic-style-gold.png"></a>
+                <img src="../images/tree-of-life-drawing-celtic-style-gold.png"></a>
             <div class="nav-text">
                 <a href=<?= $home ?>>
                     <h1 class="header-text">Price Family History</h1>
@@ -59,7 +59,7 @@ spl_autoload_register(function ($class) {
         </nav>
         <nav id="mobile-nav">
             <a class="logo header-text" href=<?= $home ?>>
-                <img src="/project/family_history/images/tree-of-life-drawing-celtic-style-gold.png"></a>
+                <img src="../images/tree-of-life-drawing-celtic-style-gold.png"></a>
             <div class="nav-text">
                 <a href=<?= $home ?>>
                     <h1 class="header-text">Price Family History</h1>
