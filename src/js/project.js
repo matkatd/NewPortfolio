@@ -1,4 +1,4 @@
-import DataService from "./dataService.js";
+import DataService from "./DataService.js";
 import utils from "./utils.js";
 const { getParams, clickMenu, getJsonFilename } = utils;
 const myDataService = new DataService();
