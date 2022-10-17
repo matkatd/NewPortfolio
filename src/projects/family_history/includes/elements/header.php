@@ -8,7 +8,7 @@ $about = "./about.php";
 $logo = "./images/tree-of-life-drawing-celtic-style-gold.png";
 $css = "./styles/other.css";
 spl_autoload_register(function ($class) {
-    require_once $_SERVER['DOCUMENT_ROOT'] . "/project/family_history/includes/classes/{$class}.php";
+    require_once "./includes/classes/{$class}.php";
 });
 ?>
 
