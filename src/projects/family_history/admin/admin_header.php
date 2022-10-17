@@ -44,7 +44,7 @@ spl_autoload_register(function ($class) {
 
         <nav id="desktop-nav">
             <a class="logo header-text" href=<?= $home ?>>
-                <img src="../images/tree-of-life-drawing-celtic-style-gold.png"></a>
+                <img src="../../images/tree-of-life-drawing-celtic-style-gold.png"></a>
             <div class="nav-text">
                 <a href=<?= $home ?>>
                     <h1 class="header-text">Price Family History</h1>
@@ -59,7 +59,7 @@ spl_autoload_register(function ($class) {
         </nav>
         <nav id="mobile-nav">
             <a class="logo header-text" href=<?= $home ?>>
-                <img src="../images/tree-of-life-drawing-celtic-style-gold.png"></a>
+                <img src="../../images/tree-of-life-drawing-celtic-style-gold.png"></a>
             <div class="nav-text">
                 <a href=<?= $home ?>>
                     <h1 class="header-text">Price Family History</h1>
