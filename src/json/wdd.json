@@ -41,8 +41,8 @@
     "title": "Social Impact Projects",
     "date": "May 2022",
     "slug": "sip",
-    "img": "../res/fam_history.png",
-    "alt": "Screenshot of family history website",
+    "img": "../res/sip.jpg",
+    "alt": "Screenshot of Social Impact Projects website",
     "writeup": ["<p>first paragraph</p>", "<img src='' alt='' />"]
   }
 ]

@@ -5,13 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/main.css" />
+    <script type="module" src="./js/main.js"></script>
     <title>David Thompson</title>
   </head>
   <body>
     <nav>
       <img src="./res/logo.png" alt="Logo" class="logo" />
-      <div>
+      <div class="big-menu">
         <ul class="nav-links">
+          <li><a href="./pages/wdd.html">Web Design/Development</a></li>
+          <li><a href="./pages/se.html">Software Engineering</a></li>
+          <li><a href="./pages/photo.html">Photography</a></li>
+          <li><a href="./pages/other.html">Other</a></li>
+          <li><a href="./pages/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="mobile-menu">
+        <div class="dropdown">Menu</div>
+        <ul id="mobile-overlay">
+          <div class="exit">&times;</div>
           <li><a href="./pages/wdd.html">Web Design/Development</a></li>
           <li><a href="./pages/se.html">Software Engineering</a></li>
           <li><a href="./pages/photo.html">Photography</a></li>
@@ -33,12 +45,14 @@
         src="./res/red-Arrow-clipart-transparent.svg"
         alt="a red arrow pointing upwards"
       />
-      <button class="contact-button">Contact</button>
+      <a class="contact-button" href="./pages/contact.html"
+        ><button>Contact</button></a
+      >
     </main>
     <footer>
       <p>David Thompson © 2022</p>
       <p>
-        Curious about the domain name? Check out my
+        Curious about the domain name? Check out the
         <a href="./pages/project.html?proj=cloudclock&cat=other"
           >CloudClock project</a
         >
