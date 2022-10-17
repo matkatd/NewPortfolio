@@ -2,7 +2,7 @@
   class DatabaseConnection {
     public static function getConnection() {
       $host = 'localhost';
-      $database = 'tardissh_thompson';
+      $database = 'family_history';
       $user = 'root';
       $pass = 'root';
       $dsn = "mysql:host={$host};dbname={$database}";
@@ -16,4 +16,3 @@
       return $connection;
     }
   }
-?>

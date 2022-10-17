@@ -18,8 +18,15 @@ main {
 footer {
   background-color: #bababa;
   width: 100%;
-  height: 15vh;
+  height: 5em;
   margin: 0;
+  text-align: center;
+  font-family: Optima;
+}
+
+footer p {
+  margin: 3em;
+  padding: 2em;
 }
 
 h1,
