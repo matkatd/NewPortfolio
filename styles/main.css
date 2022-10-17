@@ -67,6 +67,15 @@ img {
   display: block;
   width: 100%;
 }
+
+a {
+  color: var(--main-blue);
+}
+
+a:active {
+  color: var(--main-blue);
+}
+
 .logo {
   height: 3.5rem;
   width: auto;

@@ -1,40 +1,48 @@
 [
   {
     "title": "Family History",
-    "date": "mm/dd/yy",
+    "date": "April 2022",
     "slug": "fam_history",
-    "img": "../res/fam_history.png",
+    "img": "../res/fam_history.jpg",
     "alt": "Screenshot of family history website",
     "writeup": [
-      "<p>first paragraph</p>",
-      "<img src='../res/fam_history.png' alt='screenshot of family history site' />"
+      "<p> Click <a href='../projects/family_history/index.php'>here</a> to check it out!</p>",
+      "<p>Or click <a href='https://github.com/matkatd/family_history'>here</a> to view it on GitHub!</p>",
+      "<h2>Context</h2>",
+      "<p>I love my family, and I owe a lot to them. This project was an opportunity to make something that would be valuable to them. It's a database of stories and facts about my ancestors. I built it in PHP and have it connected to a MySQL database, and am hosting it on my <a href='../src/project?proj=cloudclock&cat=other'>CloudClock server</a></p>"
     ]
   },
   {
-    "title": "name2",
-    "date": "mm/dd/yy",
-    "slug": "name2",
-    "img": "../res/fam_history.png",
-    "alt": "Screenshot of family history website",
-    "link": "url/sub/directories",
-    "writeup": ["<p>first paragraph</p>", "<img src='' alt='' />"]
+    "title": "Precipice Ponderings",
+    "date": "December 2021",
+    "slug": "precipice",
+    "img": "../res/precipice_ponder.jpg",
+    "alt": "Screenshot of gear review website",
+    "writeup": [
+      "<p> Click <a href='https://matkatd.github.io/ReviewSite/'>here</a> to check it out!</p>",
+      "<p>Or click <a href='https://github.com/matkatd/ReviewSite'>here</a> to view it on GitHub!</p>",
+      "<h2>Context</h2>",
+      "<p></p>"
+    ]
   },
   {
-    "title": "name3",
-    "date": "mm/dd/yy",
-    "slug": "name3",
-    "img": "../res/fam_history.png",
-    "alt": "Screenshot of family history website",
-    "link": "url/sub/directories",
-    "writeup": ["<p>first paragraph</p>", "<img src='' alt='' />"]
+    "title": "Ballard Brief",
+    "date": "May 2022",
+    "slug": "ballard_brief",
+    "img": "../res/ballard_brief_hero.jpg",
+    "alt": "Screenshot of Ballard Brief Website",
+    "writeup": [
+      "<p>Check out the current version <a href='ballardbrief.byu.edu'>here</a>!</p>",
+      "<h2>Context</h2>",
+      "<p>Story of Ballard Brief update</p>"
+    ]
   },
   {
-    "title": "name4",
-    "date": "mm/dd/yy",
-    "slug": "name4",
+    "title": "Social Impact Projects",
+    "date": "May 2022",
+    "slug": "sip",
     "img": "../res/fam_history.png",
     "alt": "Screenshot of family history website",
-    "link": "url/sub/directories",
     "writeup": ["<p>first paragraph</p>", "<img src='' alt='' />"]
   }
 ]

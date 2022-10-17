@@ -24,8 +24,8 @@ export default class DataService {
   }
 
   /** Returns data attached to object with given slug */
-  async getBySlug(url, slug) {
-    const content = await this.getContent(baseUrl + url);
+  async getBySlug(data, slug) {
+    const content = await this.getContent(data);
     const find = content.find((item) => item.slug === slug);
     return find;
   }
