@@ -3,7 +3,7 @@
 $home = "../../index.php";
 $stories = "../../stories.php";
 $people = "../../people.php";
-$admin = "../../admin/admin.php";
+$admin = "../admin.php";
 $about = "../../about.php";
 $logo = "../../images/tree-of-life-drawing-celtic-style-gold.png";
 $css = "../../styles/other.css";
@@ -16,13 +16,13 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     exit;
 } else if ($page === "CRUDE") { //Based on the page, change what the link that originally says "login"
     $admin_link = "Admin";
-    $admin = "./CRUDE/index.php";
+    $admin = "./index.php";
 } else {
     $admin_link = "Logout";
-    $admin = "./logout.php";
+    $admin = "../logout.php";
 }
 spl_autoload_register(function ($class) {
-    require_once $_SERVER['DOCUMENT_ROOT'] . "/project/family_history/includes/classes/{$class}.php";
+    require_once "../../includes/classes/{$class}.php";
 });
 ?>
 

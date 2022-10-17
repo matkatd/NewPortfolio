@@ -15,7 +15,7 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
 $home = "../index.php";
 $stories = "../stories.php";
 $people = "../people.php";
-$admin = "../admin/admin.php";
+$admin = "./admin.php";
 $about = "../about.php";
 $logo = "../images/tree-of-life-drawing-celtic-style-gold.png";
 $css = "../styles/other.css";
@@ -24,7 +24,7 @@ $admin_link = "Login";
 
 // Grab all classes
 spl_autoload_register(function ($class) {
-    require_once $_SERVER['DOCUMENT_ROOT'] . "/project/family_history/includes/classes/{$class}.php";
+    require_once "../includes/classes/{$class}.php";
 });
 
 
