@@ -9,7 +9,7 @@
       "<p> Click <a href='../projects/family_history/index.php'>here</a> to check it out!</p>",
       "<p>Or click <a href='https://github.com/matkatd/family_history'>here</a> to view it on GitHub!</p>",
       "<h2>Context</h2>",
-      "<p>I love my family, and I owe a lot to them. This project was an opportunity to make something that would be valuable to them. It's a database of stories and facts about my ancestors. I built it in PHP and have it connected to a MySQL database, and am hosting it on my <a href='../src/project?proj=cloudclock&cat=other'>CloudClock server</a></p>"
+      "<p>I love my family, and I owe a lot to them. This project was an opportunity to make something that would be valuable to them. It's a database of stories and facts about my ancestors. I built it in PHP and have it connected to a MySQL database, and am hosting it on my <a href='./project.html?proj=cloudclock&cat=other'>CloudClock server</a></p>"
     ]
   },
   {

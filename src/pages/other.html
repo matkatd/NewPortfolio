@@ -5,14 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/main.css" />
+    <script type="module" src="../js/main.js"></script>
     <script type="module" src="../js/cards.js"></script>
     <style>
       :root {
         --main-green: #7cc69e;
-        --nav-color: #ebd494;
+        --nav-color: #668f80;
         --footer-color: #54426b;
-        --main-blue: #3083dc;
-        --background: #9ad2cb;
+        --main-blue: #987284;
+        --nav-text: white;
+        --nav-hover: black;
+        --background: #cfd6ea;
+      }
+
+      h2 {
+        color: black;
       }
     </style>
     <title>Other Projects</title>
@@ -22,13 +29,24 @@
       <a href="../index.html"
         ><img src="../res/logo.png" alt="Logo" class="logo"
       /></a>
-      <div>
+      <div class="big-menu">
         <ul class="nav-links">
           <li><a href="wdd.html">Web Design/Development</a></li>
           <li><a href="se.html">Software Engineering</a></li>
           <li><a href="photo.html">Photography</a></li>
           <li><a href="other.html">Other</a></li>
           <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="mobile-menu">
+        <div class="dropdown">Menu</div>
+        <ul id="mobile-overlay">
+          <div class="exit">&times;</div>
+          <li><a href="./wdd.html">Web Design/Development</a></li>
+          <li><a href="./se.html">Software Engineering</a></li>
+          <li><a href="./photo.html">Photography</a></li>
+          <li><a href="./other.html">Other</a></li>
+          <li><a href="./contact.html">Contact</a></li>
         </ul>
       </div>
     </nav>

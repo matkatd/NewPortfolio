@@ -60,7 +60,7 @@ main {
 
 h1 {
   font-family: lato-xbold;
-  font-size: 3rem;
+  font-size: 2.7rem;
 }
 
 h2 {
@@ -134,7 +134,7 @@ nav a:hover {
 
 .green-box {
   background-color: var(--main-green);
-  width: 30rem;
+  width: 27rem;
   padding: 0.5rem 1.5rem 1rem 1.5rem;
 
   /* left: 4em;
@@ -144,20 +144,20 @@ nav a:hover {
 
 .red-arrow {
   position: absolute;
-  margin: 0 0 0 30rem;
+  margin: 0 0 0 27rem;
   top: 5rem;
-  max-width: 20rem;
+  width: 17rem;
 }
 
 .contact-button button {
   background-color: var(--main-blue);
   border: none;
-  padding: 1.5rem 2.5rem;
+  padding: 1rem 2rem;
   border-radius: 15px;
   color: white;
   font-family: var(--font-header);
-  font-size: 1.5rem;
-  margin: 1.5rem 0 1rem 4rem;
+  font-size: 1.25rem;
+  margin: 1rem 0 1rem 4rem;
   transition: ease background-color 0.5s;
   cursor: pointer;
 }
@@ -168,12 +168,13 @@ nav a:hover {
 }
 
 footer {
-  height: 5rem;
+  height: 6em;
   background-color: var(--footer-color);
   color: white;
   font-family: var(--font);
   text-align: center;
   font-size: 1rem;
+  margin-top: 1rem;
   /* margin: auto 0; */
 }
 
@@ -202,9 +203,10 @@ h2.grid-page {
 }
 
 .card img {
-  width: 100%;
+  /* max-width: 100%; */
   height: 40%;
   border-radius: 10px 10px 0 0;
+  object-fit: cover;
 }
 
 .card-text {
@@ -219,7 +221,7 @@ h2.grid-page {
   padding: 0.5rem 1rem;
   background-color: var(--main-blue);
   border-radius: 15px 7px 15px 7px;
-  width: 50%;
+  width: 40%;
   color: white;
   font-family: var(--font);
   text-decoration: none;
@@ -349,8 +351,8 @@ h2.grid-page {
   nav li {
     background-image: linear-gradient(
       to right,
-      var(--main-green),
-      var(--main-green) 50%,
+      var(--main-blue),
+      var(--main-blue) 50%,
       #000 50%
     );
     background-size: 200% 100%;
@@ -363,7 +365,7 @@ h2.grid-page {
 
   nav li:before {
     content: "";
-    background: #7cc69e;
+    background: var(--main-blue);
     display: block;
     position: absolute;
     bottom: -3px;
@@ -378,5 +380,25 @@ h2.grid-page {
 
   nav li:hover::before {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 675px) {
+  #card-grid {
+    /* grid-template-columns: 1fr; */
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .green-box {
+    margin: 1rem;
+    width: 80vw;
+  }
+  .contact-button button {
+    margin: 1rem;
   }
 }
