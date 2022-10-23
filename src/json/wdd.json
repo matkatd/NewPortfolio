@@ -6,7 +6,7 @@
     "img": "../res/fam_history.jpg",
     "alt": "Screenshot of family history website",
     "writeup": [
-      "<p> Click <a href='../projects/family_history/index.php'>here</a> to check it out!</p>",
+      "<p> Click <a href='../projects/family_history'>here</a> to check it out!</p>",
       "<p>Or click <a href='https://github.com/matkatd/family_history'>here</a> to view it on GitHub!</p>",
       "<h2>Context</h2>",
       "<p>I love my family, and I owe a lot to them. This project was an opportunity to make something that would be valuable to them. It's a database of stories and facts about my ancestors. I built it in PHP and have it connected to a MySQL database, and am hosting it on my <a href='./project.html?proj=cloudclock&cat=other'>CloudClock server</a></p>"
@@ -22,6 +22,7 @@
       "<p> Click <a href='https://matkatd.github.io/ReviewSite/'>here</a> to check it out!</p>",
       "<p>Or click <a href='https://github.com/matkatd/ReviewSite'>here</a> to view it on GitHub!</p>",
       "<h2>Context</h2>",
+      "<p>This started as a project for an introductory web development class. The requirements were to build a multi page site related to something I was interested in. I took it further and turned it into a responsive site with dynamically generated pages.</p>",
       "<p></p>"
     ]
   },
@@ -32,9 +33,9 @@
     "img": "../res/ballard_brief_hero.jpg",
     "alt": "Screenshot of Ballard Brief Website",
     "writeup": [
-      "<p>Check out the current version <a href='ballardbrief.byu.edu'>here</a>!</p>",
+      "<p>Check out the current version <a href='https://ballardbrief.byu.edu'>here</a>!</p>",
       "<h2>Context</h2>",
-      "<p>Story of Ballard Brief update</p>"
+      "<p>Ballard Brief case study</p>"
     ]
   },
   {
@@ -43,6 +44,10 @@
     "slug": "sip",
     "img": "../res/sip.jpg",
     "alt": "Screenshot of Social Impact Projects website",
-    "writeup": ["<p>first paragraph</p>", "<img src='' alt='' />"]
+    "writeup": [
+      "<p>Check it out <a href='https://sip.byu.edu'>here</a>!</p>",
+      "<h2>Context</h2>",
+      "<p>Social Impact Projects case study</p>"
+    ]
   }
 ]
