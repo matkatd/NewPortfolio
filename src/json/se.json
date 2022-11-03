@@ -3,12 +3,13 @@
     "title": "Relational Database",
     "date": "April 2022",
     "slug": "rel_datbase",
-    "img": "../res/fam_history.jpg",
-    "alt": "Screenshot of family history website",
+    "img": "../res/CS236.png",
+    "alt": "Screenshot of XCode running c++ program",
     "writeup": [
-      "<p> Interested in the executable? <a href=''>Download here</a></p>",
       "<h2>Context</h2>",
-      "<p>This was the culminating project for my university CS class on discrete math. Throughout the class we built a scanner, parser, database, and interpreter. The language used was C++</p>"
+      "<p>This was the culminating project for my CS class on discrete math. Throughout the class we built a scanner, parser, database, and interpreter. The language used was C++.</p>",
+      "<p>The purpose of the project was to teach us about relational databases, propositional logic, discrete structures such as graphs, and writing large programs</p>",
+      "<p>The program would take two command line argurments: an input file with DataLog code, and a file to write to. Next, the program took the input, tokenized it, parsed it, and performed operations on the database. The final part of the project was using graphs and depth first search to optimize the order in which the database operations were performed.</p>"
     ]
   },
   {
@@ -20,7 +21,9 @@
     "writeup": [
       "<p>Currently working on it, check back in January</p>",
       "<h2>Context</h2>",
-      "<p>Developing an Android app in Java for my Advanced Programming Concepts class. It takes a mock set of family history data and populates a map with events such as birth/death, marriage, and others.</p>"
+      "<p>Developing an Android app in Java for my Advanced Programming Concepts class. It takes a mock set of family history data and populates a map with events such as birth/death, marriage, and others.</p>",
+      "<p>Technologies/concepts used</p>",
+      "<ol><li>Java</li><li>SQLite</li><li>HTTP handlers</li><li>Web APIs</li></ol>"
     ]
   }
 ]

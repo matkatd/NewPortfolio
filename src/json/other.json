@@ -9,7 +9,7 @@
       "<h2>Context</h2>",
       "<p>For my introductory IT class, the final project was to build something with a Raspberry Pi computer. I decided on building a cloud storage unit, but with a twist. It would housed inside a clock.</p>",
       "<p>The project took several weeks to initially complete, and I keep coming back and adding/changing features. Originally it was just using NextCloud to operate as a NAS, but I took it further and hooked it up with a free No-IP DDNS domain name. This required me to figure out how to set up port forwarding and NAT virtual servers on my router.</p>",
-      "<p>I figured that since I had a domain name and an Apache server already setup, I may as well use it to host my portfolio. So, next I learned how to set up a self-signed TLS certificate and moved everthing to the Pi.</p>",
+      "<p>I figured that since I had a domain name and an Apache server already setup, I may as well use it to host my portfolio. So, next I learned how to set up a TLS certificate and moved everthing to the Pi.</p>",
       "<p>Some fun features of the clock itself include the clock body, which I found at a thrift store for a few bucks, and proceeded to gut. The only original component left is the shell. After gutting it I bought a digital display, which I soldered together and hooked up. The pi is running a python script to keep the display on the right time.</p>",
       "<img src='../res/clockguts.jpg' alt='Insides of the cloudclock' />"
     ]
