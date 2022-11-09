@@ -11,6 +11,7 @@ function buildProject(data) {
   data.writeup.forEach((element) => {
     html.innerHTML += element;
   });
+  document.title = data.title;
   return html;
 }
 
