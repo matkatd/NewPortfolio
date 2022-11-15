@@ -280,6 +280,10 @@ h2.img-page {
   width: auto;
 }
 
+.venobox img {
+  border-radius: 10px;
+}
+
 @media only screen and (max-width: 1100px) {
   html {
     font-size: 14pt;
