@@ -16,6 +16,7 @@ function buildPage(content, url) {
       <img
         src="${element.thumb}"
         alt="${element.alt}"
+        loading="lazy"
       />`;
   });
 
