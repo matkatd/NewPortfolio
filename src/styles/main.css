@@ -26,7 +26,7 @@
 :root {
   --main-green: #7cc69e;
   --nav-color: #f7cb5c;
-  --nav-text: black;
+  --nav-text: #1b1c1e;
   --nav-hover: white;
   --footer-color: #54426b;
   --main-blue: #3083dc;
@@ -43,10 +43,8 @@ body {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-
   background: var(--background);
   width: 100vw;
-  /* height: 100vh; */
   min-height: 100vh;
 
   display: flex;
@@ -183,7 +181,9 @@ footer {
 h2.grid-page {
   text-align: center;
 }
-
+h2.img-page {
+  color: #1b1c1e;
+}
 #card-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -273,6 +273,11 @@ h2.grid-page {
 
 .links-contact a {
   margin-right: 2rem;
+}
+
+.img-overlay img {
+  max-height: 95vh;
+  width: auto;
 }
 
 @media only screen and (max-width: 1100px) {

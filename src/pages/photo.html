@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <link rel="stylesheet" href="../VenoBox-2.0.4/dist/venobox.min.css" />
     <link rel="stylesheet" href="../styles/main.css" />
+
     <script type="module" src="../js/main.js"></script>
-    <!-- <script type="module" src="../js/cards.js"></script> -->
+    <script type="module" src="../js/photos.js"></script>
     <style>
       :root {
         --main-green: #7cc69e;
@@ -48,16 +50,18 @@
       </div>
     </nav>
     <main>
-      <h2 class="grid-page">Photography</h2>
-      <div id="card-grid">
-        <h2>COMING SOON!</h2>
-      </div>
+      <h2 class="grid-page img-page">Photography</h2>
+      <div id="card-grid"></div>
     </main>
     <footer>
       <p>
         © 2022 <br />
         David Thompson
       </p>
+      <script src="../VenoBox-2.0.4/dist/venobox.min.js"></script>
+      <script>
+        new VenoBox();
+      </script>
     </footer>
   </body>
 </html>
