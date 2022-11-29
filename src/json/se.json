@@ -23,7 +23,7 @@
       "<h2>Context</h2>",
       "<p>Developing an Android app in Java for my Advanced Programming Concepts class. It takes a mock set of family history data and populates a map with events such as birth/death, marriage, and others.</p>",
       "<p>Technologies/concepts used</p>",
-      "<ol><li>Java</li><li>SQLite</li><li>HTTP handlers</li><li>Web APIs</li></ol>"
+      "<ol><li>Java</li><li>SQLite</li><li>HTTP handlers</li><li>Web APIs</li><li>Android Studio</li></ol>"
     ]
   }
 ]
