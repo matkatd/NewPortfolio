@@ -37,6 +37,7 @@
 
 html {
   font-size: 16pt;
+  box-sizing: border-box;
 }
 
 body {
@@ -54,6 +55,12 @@ body {
 main {
   flex-grow: 1;
   color: var(--nav-text);
+}
+
+blockquote {
+  margin-inline-start: 0;
+  padding-inline-start: 40px;
+  border-inline-start: var(--footer-color) solid 4px;
 }
 
 h1 {
@@ -271,10 +278,6 @@ h2.img-page {
   /* width: 20rem; */
 }
 
-.links-contact a {
-  margin-right: 2rem;
-}
-
 .img-overlay img {
   max-height: 95vh;
   width: auto;
@@ -420,6 +423,25 @@ h2.img-page {
   nav li:hover::before {
     width: 100%;
   }
+}
+
+.links-contact {
+  margin-top: 2rem;
+}
+
+.linked-button {
+  padding: 1rem 1.5rem;
+  background-color: var(--main-blue);
+  color: white;
+  border-radius: 10px;
+  margin-top: 1rem;
+  margin-right: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.linked-button:hover {
+  background-color: #386da6;
+  transition: all 0.3s ease-in-out;
 }
 
 @media only screen and (max-width: 675px) {

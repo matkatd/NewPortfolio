@@ -46,7 +46,7 @@
       "<iframe src='https://storage.googleapis.com/cloudclock-pdf/Ballard_Brief_Style_Guide.pdf' width='100%' height='650px'>",
       "<p>My next step was to perform a competitive analysis. The two organizations I analyzed were the Stanford Social Innovation Review and the Harvard Social Innovation and Change Initiative. These are both high profile social impact organizations with readership that the Ballard Brief aspires to have.</p>",
       "<p>The results and summary of all the research performed by me and my team members can be seen in the following report:</p>",
-      "<iframe src='../res/Website_Research_Analysis.pdf' width='100%' height='650px'>",
+      "<iframe src='https://storage.googleapis.com/cloudclock-pdf/Website_Research_Analysis.pdf' width='100%' height='650px'>",
       "<p>The next step was to begin designing the new interface. I went straight into building each page in Adobe XD, rather than starting with paper prototypes. The major changes I implemented were brightening the color scheme, reorganizing the content to create a more logical flow, updating the images to align more with our brand, and adding additional content pages that are more relevant to the students interesting in writing briefs.</p>"
     ]
   },
@@ -59,7 +59,8 @@
     "writeup": [
       "<p>Check it out <a href='https://sip.byu.edu'>here</a>!</p>",
       "<h2>Context</h2>",
-      "<p>Social Impact Projects case study</p>"
+      "<blockquote>\"Social Impact Projects (SIP) is an on-campus internship program that empowers students to work on innovative projects worldwide for award-winning organizations that make a difference.\"</blockquote>",
+      "<p>For this project I was responsible for designing the color scheme and layout for the website and for building template pages. Once this was done, I turned it over to the SIP team to fill with content</p>"
     ]
   }
 ]
