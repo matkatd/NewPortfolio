@@ -16,10 +16,10 @@
     "title": "Family Map",
     "date": "December 2022",
     "slug": "FM",
-    "img": "../res/precipice_ponder.jpg",
+    "img": "../res/familymap-wide.jpg",
     "alt": "Screenshot of family map client app",
     "writeup": [
-      "<p>Currently working on it, check back in January</p>",
+      "<p>In Progress</p>",
       "<h2>Context</h2>",
       "<p>Developing an Android app in Java for my Advanced Programming Concepts class. It takes a mock set of family history data and populates a map with events such as birth/death, marriage, and others.</p>",
       "<p>Technologies/concepts used</p>",
